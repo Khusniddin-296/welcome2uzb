@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: inherit;    
+}
+.header{
+    width: 100%;
+    height: 50px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.flag{
+    width: 65px;
+    height: 35px;
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 10vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ban-text{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500;
+    font-size: 35px;
+    text-shadow: 1px 1px 8px #000;
+}
+.ban-text:hover{
+    cursor: pointer;
+    animation: animate 2s infinite;
+    animation-duration: 5s;
+
+}
+@keyframes animate{
+    0%{
+        text-shadow: -4px -3px 5px #000;
+    }
+    
+    
+    100%{
+        text-shadow: 4px 3px 5px #000;
+    }
+}
+
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+    margin-top: 55px;
+}
+.ul{
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+li{
+    display: inline;
+    padding: 10px;
+}
+
+.home{
+    color: #333;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.about{
+    color: #333;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.faq{
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;    
+}
+.contact{
+    color: #333;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.instagram1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#instagram{
+    width: 45px;
+    height: 35px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////*/
+@media (max-width:377px) {
+    body{
+        overflow-x: inherit;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .ul{
+        display: flexbox;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin: 10px;
+    }
+    li{
+        display: block;
+        text-indent: 1rem;
+        width: 100%;
+        padding: 2px;
+        margin: 5px;
+        
+    }
+    .home1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .home{
+        color: #333;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .home:hover{
+        background-color:grey;
+        color: #fff;
+    }
+
+    .about{
+        color: #333;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+    }
+    .about1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .about:hover{
+        background-color:grey;
+        color: #fff;
+    }
+    .faq{
+        color: #333;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;    
+    }
+    .faq1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .faq:hover{
+        background-color:grey;
+        color: #fff;
+    }
+    .contact{
+        color: #333;
+        padding-left: 1px;
+        padding-right: 1px;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+    }
+    .contact1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact:hover{
+        background-color:grey;
+        color: #fff;
+    }
+
+    .instagram1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+   
+    #instagram{
+        width: 45px;
+        height: 33px; 
+    }
+    .container1{
+        width: 100%;
+        height: 600px;
+        margin-top: 70px;
+        position: relative;
+        
+    }
+    .img2{
+        width: 375px;
+        height: 280px;
+        position: absolute;
+        left: 0%;
+        top:0%;
+        box-shadow: 1px 3px 5px 1px grey;
+        
+    }
+    .title1{
+        top: 48%;
+        left: 42%;
+        position: absolute;
+    }
+    .info1{
+        top: 52%;
+        text-indent: 5px;
+        left: 2%;
+        position: absolute;
+        font-family: serif;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+}
+
+
+@media (min-width:378px) {
+    body{
+        overflow-x: inherit;
+    }
+    #instagram{
+        width: 50px;
+        height: 33px; 
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .ul{
+        width: 800px;
+        height: 50px; 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    li{
+        display: inline;
+    }
+    .container1{
+    display: flex;
+    
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 30px;
+    padding: 20px;
+    }
+    .img2{  
+        
+        width: auto;
+        height: 100vh;
+        box-shadow: 1px 3px 5px 1px grey;
+    }
+    .title1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info1{
+        font-family: serif;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+    }
+
+}
